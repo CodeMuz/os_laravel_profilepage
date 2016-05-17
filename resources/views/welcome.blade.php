@@ -14,7 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom Compiled CSS -->
-    <link rel="stylesheet" href="{{ elixir("css/all.css") }}">
+    <link rel="stylesheet" href="{{ config('app.env') == "production" ? secure_asset(elixir("css/all.css")) : elixir("css/all.css") }}">
 
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -142,7 +142,8 @@
 
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="{{ elixir("js/all.js") }}"></script>
+<script src="{{ config('app.env') == "production" ? secure_asset(elixir("js/all.js")) : elixir("js/all.js") }}"></script>
+
 
 </body>
 

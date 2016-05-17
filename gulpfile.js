@@ -20,6 +20,6 @@ elixir(function(mix) {
          "bootstrap-theme.min.css",
          "app.css"
         ], 'public/css/all.css', 'public/css/')
-        .scripts(['codelancer.js', 'functions.js'], 'public/js/all.js','public/js/')
+        .scripts(['functions.js'], 'public/js/all.js','public/js/')
         .version(["css/all.css", "js/all.js"]);
 });

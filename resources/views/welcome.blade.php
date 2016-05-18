@@ -8,7 +8,7 @@
 
         <!-- Header -->
 <header>
-    <div class="container">
+    <div class="container home-banner">
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-text">
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" data-toggle="tooltip" title="CV" href="CV.pdf"
+                        <a target="_blank" data-toggle="tooltip" title="Résumé" href="CV.pdf"
                            class="btn-social btn-outline"><i class="fa fa-fw fa-file"></i></a>
                     </li>
                     <li>

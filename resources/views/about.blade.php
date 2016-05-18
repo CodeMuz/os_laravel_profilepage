@@ -6,6 +6,9 @@
 
 @section('content')
 
-    <span>about</span>
+        <!-- Header -->
+<header>
+    <img class="img-responsive" src="img/profile.png" alt="">
+</header>
 
 @endsection

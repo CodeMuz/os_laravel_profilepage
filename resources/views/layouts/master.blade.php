@@ -28,6 +28,7 @@
     <title>Murray Wynnes // London Web developer // @yield('title')</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
 
     <!-- Custom Compiled CSS -->
     <link rel="stylesheet"

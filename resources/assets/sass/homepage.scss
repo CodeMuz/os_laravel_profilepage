@@ -1,11 +1,8 @@
 header {
   text-align: center;
-  color: white;
-  img.img-responsive {
-    margin: auto;
-    padding: 100px 50px;
-  }
+
   .container.home-banner {
+    color: white;
     width: 100%;
     background-position: center top;
     background-attachment: scroll;
@@ -42,7 +39,7 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $medium-pagebreak) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -60,7 +57,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: $medium-pagebreak) {
   header .container.home-banner {
     height: 30vh;
     .intro-text .intro-header {

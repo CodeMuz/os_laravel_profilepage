@@ -1,6 +1,9 @@
 /*
  * Globals
  */
+/*
+ * Globals
+ */
 /* Links */
 a,
 a:focus,
@@ -173,12 +176,9 @@ section {
   border: none; }
 
 header {
-  text-align: center;
-  color: white; }
-  header img.img-responsive {
-    margin: auto;
-    padding: 100px 50px; }
+  text-align: center; }
   header .container.home-banner {
+    color: white;
     width: 100%;
     background-position: center top;
     background-attachment: scroll;
@@ -282,5 +282,24 @@ footer {
 .btn:active,
 .btn.active {
   outline: none; }
+
+header div.profile-wrapper {
+  height: 200px;
+  padding: 50px 20px;
+  background-image: url("../../img/binding_light.png");
+  background-repeat: repeat; }
+
+header img.img-responsive {
+  width: 256px;
+  margin: auto;
+  border: 10px solid white;
+  padding: 0px;
+  position: relative;
+  border-radius: 100%;
+  bottom: 107px;
+  top: 25px; }
+
+div.about-panel {
+  text-align: left; }
 
 /*# sourceMappingURL=app.css.map */

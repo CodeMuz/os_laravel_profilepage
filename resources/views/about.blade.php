@@ -8,34 +8,78 @@
 
         <!-- Header -->
 <header>
-    <div class="profile-wrapper"">
+    <div class="profile-wrapper">
 
         <img class="img-responsive" style="visibility:hidden" src="img/profile.png" alt="">
     </div>
     <div class="panel panel-default about-panel">
-
         <div class="panel-body">
+            <section class="about-text-block">
 
-            <h1>About</h1>
+                <h1>About me</h1>
 
-            <p>Hi I'm Murray, a tech enthusiast, a thrill seeker, music lover and social butterfly. I've lived in London for over a year now and work at the digital agency Captive Minds.</p>
+                <p>Hi I'm Murray, a tech enthusiast, thrill seeker, music lover and social butterfly. I've lived in
+                    London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
 
-            <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
-                Computing.</p>
+                <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
+                    Computing.</p>
 
-            <p>I'm passionate about all things digital and how they can be used to benefit society.</p>
+                <p>I'm passionate about all things digital and how they can be used to benefit society.</p>
 
-            <p>When I'm not at the computer I love to explore the world. see map here</p>
+                <p>When I'm not at the computer I love to explore the world and experience new cultures, see some of the
+                    places you might
+                    find me <a href="" onclick="return false;" data-toggle="modal" data-target="#myModal">here</a>.</p>
 
-            <p>The last books I read were: Jungle Book, Darwins Ghosts and ... Check out some of the things i can
-                remember reading <a href="">here</a></p>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Travel Map</h4>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1JugdoW0l7ttbn98psy-84lkhVuQ"
+                                        width="100%" height="480"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </div>
+                <p>The last books I read were: the Foundation Trilogy, Darwin's Ghosts and the Jungle Book. Check out
+                    other the things I
+                    remember reading <a target="_blank"
+                                        href="https://www.goodreads.com/user/show/43312599-murray-wynnes">here</a>.</p>
 
-        <div class="panel-body">
-            <h1>This Website</h1>
+                <p><a target="_blank" href="resume.pdf" class="btn btn-success"
+                      role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
 
-            About this website
+            </section>
+
+            <section class="about-text-block">
+
+                <h1>this website</h1>
+
+                <p>This website was built using PHP, HTML5, SCSS and JQuery. For the framework I'm using <a
+                            target="_blank" href="https://laravel.com/">Laravel</a> and for a responsive layout
+                    I'm using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The site is
+                    built and packaged with <a
+                            target="_blank"
+                            href="http://gulpjs.com/">Gulp</a> and <a href="https://laravel.com/docs/5.0/elixir" target="_blank">Elixer</a>.
+                </p>
+
+                <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
+                    and
+                    open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+
+                <a target="_blank" href="https://github.com/CodeMuz/laravel-profile-page" class="btn btn-primary"
+                   role="button"><i class="fa fa-github" aria-hidden="true"></i> View
+                    source on Github</a>
+            </section>
         </div>
     </div>
 </header>

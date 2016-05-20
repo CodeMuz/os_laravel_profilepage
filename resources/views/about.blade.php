@@ -18,7 +18,7 @@
 
                 <h1>About me</h1>
 
-                <p>Hi I'm Murray, a tech enthusiast, thrill seeker, music lover and social butterfly. I've lived in
+                <p>Hi I'm Murray, a tech enthusiast, thrill seeker, music lover and explorer. I've lived in
                     London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
 
                 <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
@@ -58,23 +58,162 @@
                 <p><a target="_blank" href="resume.pdf" class="btn btn-success"
                       role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
 
+
+                <h1>Technical Skills</h1>
+
+                <div class="skill-bars">
+
+
+
+                    <span>Code Igniter</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                    <span>Zend 1 & 2</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 78%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+                    <span>Laravel</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <span>JavaScript</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <span>JQuery</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <span>Angular</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 65%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <span>HTML</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <span>CSS</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h1>Competences</h1>
+
+                <div class="skill-bars">
+
+                    <span>Communication</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+
+                    <span>Critical Thinking</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 85%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+
+                    <span>Creativity</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 82%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+
+                    <span>Problem Solving</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 90%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+
+                    <span>Time management</span>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                </div>
+
             </section>
+
 
             <section class="about-text-block">
 
-                <h1>this website</h1>
+                <h1>This website</h1>
 
                 <p>This website was built using PHP, HTML5, SCSS and JQuery. For the framework I'm using <a
                             target="_blank" href="https://laravel.com/">Laravel</a> and for a responsive layout
                     I'm using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The site is
                     built and packaged with <a
                             target="_blank"
-                            href="http://gulpjs.com/">Gulp</a> and <a href="https://laravel.com/docs/5.0/elixir" target="_blank">Elixer</a>.
+                            href="http://gulpjs.com/">Gulp</a> and <a href="https://laravel.com/docs/5.0/elixir"
+                                                                      target="_blank">Elixer</a>.
                 </p>
 
                 <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
-                    and
-                    open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                    and is open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+                </p>
 
                 <a target="_blank" href="https://github.com/CodeMuz/laravel-profile-page" class="btn btn-primary"
                    role="button"><i class="fa fa-github" aria-hidden="true"></i> View

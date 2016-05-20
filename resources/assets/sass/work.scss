@@ -1,0 +1,29 @@
+div.work-panel {
+  text-align: left;
+  margin: 0;
+  border-radius: 0;
+  padding-top: 0;
+
+  h1, h2 {
+    color: #423F37;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 30px;
+  }
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .panel-body {
+    padding: 20px 10% 100px;
+  }
+  p{
+    margin-top: 30px;
+  }
+  span.date{
+    color: #c2c2c2;
+    font-weight: bolder;
+  }
+}

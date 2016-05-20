@@ -6,18 +6,11 @@
 
 @section('content')
 
-        <!-- Header -->
-<header>
     <div class="container home-banner">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-text">
-                    <span class="intro-header" style="visibility:hidden;">My name is Murray Wynnes and I'm a web developer in London.</span>
-                </div>
+            <div class="col-lg-12 banner-header">
+                    <h1 class="intro-header" style="visibility:hidden;">My name is Murray Wynnes and I'm a web developer.</h1>
             </div>
-        </div>
     </div>
-</header>
 
 <div class="profile-panel">
     <div class="container">

@@ -27,6 +27,7 @@ a:hover {
 
 html,
 body {
+  -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', Times, serif;
   height: 100%;
   background-image: url("../../img/binding_light.png");

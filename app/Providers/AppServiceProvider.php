@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Blade;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,19 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Blade::directive('progressbary', function($arguments) {
+
+            list($label, $value) = explode(',',str_replace(['(',')',' ', "'"], '', $arguments));
+
+            $string =  "<span>".$label."</span><div class='progress'>".
+                        "<div class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='".$value."'".
+                             " aria-valuemin='0'".
+                             " aria-valuemax='100' style='width: ".$value."%'>".
+                            "<span class='sr-only'>".$value."% Complete (success)</span>".
+                        "</div>".
+                    "</div>";
+            return $string;
+        });
     }
 
     /**

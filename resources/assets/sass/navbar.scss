@@ -1,48 +1,5 @@
-
-@media (min-width: 768px) {
-  .navbar-fixed-top {
-    padding: 5px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    .navbar-brand {
-      font-size: 1.5em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-    }
-    &.navbar-shrink {
-      padding: 10px 0;
-      .navbar-brand {
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
-.navbar-default .navbar-nav > li.page-scroll a {
-  text-shadow: none;
-  font-size: 1.3em;
-  padding-left: 30px;
-  color: #9E9E9E;
-  :hover {
-    color: black;
-    transition: 0.4s;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.4em;
-  }
-}
-
-
-.navbar-brand {
-  text-shadow: none;
-}
-
 .navbar {
+  height: 6%;
   position: relative;
   margin: 0;
   text-transform: uppercase;
@@ -56,9 +13,68 @@
   li a:focus {
     outline: none;
   }
+  a:hover{
+    color: black;
+  }
+
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  transition: all $time;
 }
 
 .navbar-default,
 .navbar-inverse {
   border: none;
 }
+
+@media (min-width: 768px) {
+  .navbar{
+    height: 8%;
+  }
+  .navbar-fixed-top {
+    padding: 5px 0;
+    @include transition(0.3s);
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+    &.navbar-shrink {
+      padding: 10px 0;
+      .navbar-brand {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.navbar-default .navbar-nav li.page-scroll a {
+  text-shadow: none;
+  font-size: 1.3em;
+  padding-left: 30px;
+  color: $font-grey;
+  &:hover {
+    color: $primary-color;
+    transition: .4s;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.4em;
+  }
+  .navbar-collapse{
+    border-bottom: 1px solid #BDBDBD;
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar-nav li.page-scroll{
+    border-top: 1px solid rgb(251, 251, 251);
+  }
+}
+
+
+.navbar-brand {
+  text-shadow: none;
+}
+

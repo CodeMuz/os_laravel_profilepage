@@ -10,6 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Skill;
+use App\Competency;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,7 +23,15 @@ Route::get('work', function () {
 });
 
 Route::get('about', function () {
-    return view('about');
+    $skills = Skill::orderBy('created_at', 'asc')->get();
+
+    $competency = Competency::orderBy('created_at', 'asc')->get();
+//    die;
+    return view('about', [
+        'skills' => $skills,
+        'compentency' => $competency
+    ]);
+
 });
 
 Route::get('contact', function () {

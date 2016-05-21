@@ -63,80 +63,18 @@
 
                 <div class="skill-bars">
 
+                    @foreach ($skills as $skill)
+                        <span>{{ $skill->name }}</span>
 
-
-                    <span>Code Igniter</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 70%">
-                            <span class="sr-only">20% Complete</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuenow="{{ $skill->value }}"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100" style="width:{{ $skill->value }}%">
+                                <span class="sr-only">{{ $skill->value }}% Complete</span>
+                            </div>
                         </div>
-                    </div>
-                    <span>Zend 1 & 2</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 78%">
-                            <span class="sr-only">60% Complete (warning)</span>
-                        </div>
-                    </div>
-                    <span>Laravel</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 60%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-                    <span>JavaScript</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-                    <span>JQuery</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 75%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-                    <span>Angular</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 65%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-                    <span>HTML</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-                    <span>CSS</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 70%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
+                    @endforeach
 
                 </div>
 
@@ -144,55 +82,19 @@
 
                 <div class="skill-bars">
 
-                    <span>Communication</span>
+                    @foreach ($compentency as $skill)
+                        <span>{{ $skill->name }}</span>
 
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (danger)</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuenow="{{ $skill->value }}"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100" style="width:{{ $skill->value }}%">
+                                <span class="sr-only">{{ $skill->value }}% Complete</span>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
 
-                    <span>Critical Thinking</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 85%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-
-                    <span>Creativity</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 82%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-
-                    <span>Problem Solving</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 90%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
-
-                    <span>Time management</span>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0"
-                             aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (danger)</span>
-                        </div>
-                    </div>
                 </div>
 
             </section>

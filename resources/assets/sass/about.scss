@@ -1,53 +1,86 @@
 header {
 
-  div.profile-wrapper{
+  div.profile-wrapper {
     height: 200px;
-    padding:50px 20px;
+    padding: 50px 20px;
   }
   img.img-responsive {
-    width: 256px;
     margin: auto;
     border: 10px solid white;
-    padding: 0px;
+    padding: 0;
     position: relative;
     border-radius: 100%;
     bottom: 107px;
     top: 25px;
+    width: 50%;
+    max-width: 256px;
+    min-width: 200px;
   }
 
 }
 
-div.skill-bars{
-  margin: 10px;
-  display: inline-block;
-  span{
-    width: 25%;
+@media all and (max-width: 850px) {
+  section.about-text-block div.skill-bars {
+    span {
+      text-align: left;
+      flex: 0 1 100%;
+    }
+    div.progress {
+      flex: 0 1 100%;
+    }
+  }
+  div.about-panel .panel-body {
+    padding: 80px 10%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  div.about-panel .panel-body {
+    padding: 60px 10%;
+  }
+}
+
+div.skill-bars {
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  -ms-flex-flow: row wrap;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  span {
     text-align: right;
-    float: left;
-    padding-right: 10px;
+    padding-right: 1.7%;
+    flex: 0 1 22%;
   }
-  div.progress{
-    float:left;
-    width:75%;
+  div.progress {
+    flex: 0 1 70%;
   }
 }
 
-div.about-panel{
+div.about-panel {
   text-align: left;
   margin: 0;
   border-radius: 0;
-  section.about-text-block{
-    h1{
+  section.about-text-block {
+    h1 {
       color: #423F37;
-      font-size: 30px;
-      font-weight:normal;
+      font-size: 1.9rem;
+      font-weight: normal;
       text-transform: none;
       margin-bottom: 30px;
       margin-top: 30px;
     }
     padding-top: 20px;
   }
-  .panel-body{
+  .panel-body {
     padding: 100px 10%;
+    max-width: 900px;
+    margin: auto;
+  }
+  #resume-dwnld{
+    margin: 10px 0 10px 0;
+  }
+  #github-btn{
+    margin: 10px 0 10px 0;
   }
 }

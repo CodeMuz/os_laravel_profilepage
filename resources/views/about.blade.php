@@ -55,7 +55,7 @@
                     remember reading <a target="_blank"
                                         href="https://www.goodreads.com/user/show/43312599-murray-wynnes">here</a>.</p>
 
-                <p><a target="_blank" href="resume.pdf" class="btn btn-success"
+                <p><a target="_blank" href="resume.pdf" class="btn btn-success" id="resume-dwnld"
                       role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
 
 
@@ -109,7 +109,7 @@
                     I'm using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The site is
                     built and packaged with <a
                             target="_blank"
-                            href="http://gulpjs.com/">Gulp</a> and <a href="https://laravel.com/docs/5.0/elixir"
+                            href="http://gulpjs.com/">Gulp</a> using <a href="https://laravel.com/docs/5.0/elixir"
                                                                       target="_blank">Elixer</a>.
                 </p>
 
@@ -117,7 +117,7 @@
                     and is open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
                 </p>
 
-                <a target="_blank" href="https://github.com/CodeMuz/laravel-profile-page" class="btn btn-primary"
+                <a target="_blank" id="github-btn" href="https://github.com/CodeMuz/laravel-profile-page" class="btn btn-primary"
                    role="button"><i class="fa fa-github" aria-hidden="true"></i> View
                     source on Github</a>
             </section>

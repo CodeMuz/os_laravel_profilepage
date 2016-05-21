@@ -33,6 +33,13 @@ body {
   background-image: url("../../img/binding_light.png");
   background-repeat: repeat;
   text-align: center;
+  font-size: 15px;
+}
+
+@media all and (max-width: 500px){
+  html{
+    font-size: 14px;
+  }
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -122,11 +129,11 @@ body {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 p.small {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 a,

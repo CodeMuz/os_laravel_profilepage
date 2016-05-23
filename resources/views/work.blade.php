@@ -53,8 +53,8 @@
 
         <h1>Projects</h1>
 
-        <h2>Festival Joy 2015 - current</h2>
-        <span class="date">April 21, 2016</span>
+        <h2>Festival Joy</h2>
+        <span class="date">2015 - current</span>
 
         <p>After searchign for the next music festivals comming up around europe I wasn't satisfied with the user
             experience offered by sites such as http://www.festivalsearcher.com/. Using AngularJS and the GoogleMaps

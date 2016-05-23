@@ -26,11 +26,11 @@ class SkillsSeeder extends Seeder
         ]);
         DB::table('skills')->insert([
             'name' => 'JavaScript',
-            'value' => 80
+            'value' => 75
         ]);
         DB::table('skills')->insert([
             'name' => 'JQuery',
-            'value' => 75
+            'value' => 73
         ]);
         DB::table('skills')->insert([
             'name' => 'Angular',
@@ -38,11 +38,11 @@ class SkillsSeeder extends Seeder
         ]);
         DB::table('skills')->insert([
             'name' => 'HTML',
-            'value' => 80
+            'value' => 74
         ]);
         DB::table('skills')->insert([
             'name' => 'CSS',
-            'value' => 70
+            'value' => 69
         ]);
     }
 }

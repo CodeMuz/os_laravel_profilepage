@@ -18,7 +18,7 @@
 
                 <h1>About me</h1>
 
-                <p>Hi I'm Murray, a tech enthusiast, thrill seeker, music lover and explorer. I've lived in
+                <p>Hi I'm Murray, a tech enthusiast, explorer and music lover. I've lived in
                     London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
 
                 <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced

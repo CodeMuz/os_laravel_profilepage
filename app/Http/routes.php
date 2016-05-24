@@ -22,11 +22,16 @@ Route::get('work', function () {
     return view('work');
 });
 
-Route::get('about', function () {
-    $skills = Skill::orderBy('created_at', 'asc')->get();
+Route::get('work/{page}', function ($page) {
+    return view('work/'.$page, [
+    ]);
+});
 
+Route::get('about', function () {
+
+    $skills = Skill::orderBy('created_at', 'asc')->get();
     $competency = Competency::orderBy('created_at', 'asc')->get();
-//    die;
+
     return view('about', [
         'skills' => $skills,
         'compentency' => $competency

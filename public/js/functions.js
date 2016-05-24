@@ -11,5 +11,11 @@ $(function(){
                 .addClass('animated bounceIn');
         }, 500
     );
+    setTimeout(function () {
+            $('#loqiva1')
+                .css({'visibility':'visible'})
+                .addClass('animated bounceIn');
+        }, 500
+    );
     $('[data-toggle="tooltip"]').tooltip();
 });

@@ -43,19 +43,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::post('/contact', function (Request $request) {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|max:255',
-            'email' => 'required|max:255',
-            'subject' => 'required|max:255',
-            'message' => 'required|max:255'
-        ]);
-
-        if ($validator->fails()) {
-            return redirect('/contact')
-                ->withInput()
-                ->withErrors($validator);
-        }
-
-        // Create The Task...
-});
+Route::post('/contact', 'UserController@sendEmailReminder');

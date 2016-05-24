@@ -21,6 +21,21 @@
 
                     <!-- Display Validation Errors -->
                     @include('common.errors')
+
+                    <div class="flash-message">
+                        @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+                            @if(Session::has('alert-' . $msg))
+
+                                <div class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#"
+                                                                                                         class="close"
+                                                                                                         data-dismiss="alert"
+                                                                                                         aria-label="close">&times;</a>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                    <!-- end .flash-message -->
+
                     {{ csrf_field() }}
 
                     <div class="form-group">
@@ -39,7 +54,12 @@
                         <textarea class="form-control" rows="5" name="message" placeholder="Hello Murray.."></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i></button>
+                    <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LcczSATAAAAABDkeUaqRqQ1b230BKU0Ik_2Y85X"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane fa-3x"
+                                                                               aria-hidden="true"></i></button>
 
                 </form>
             </div>

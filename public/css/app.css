@@ -136,6 +136,10 @@ section h2 {
   margin: 0;
   font-size: 3em; }
 
+.g-recaptcha {
+  margin: auto;
+  width: 303px; }
+
 .navbar {
   height: 6%;
   position: relative;

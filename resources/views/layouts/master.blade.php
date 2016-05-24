@@ -45,6 +45,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body id="page-top" class="index">

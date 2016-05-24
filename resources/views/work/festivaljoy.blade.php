@@ -7,22 +7,27 @@
 
 
     <div class="panel panel-default project-panel">
-        <h1>Loqiva</h1>
+        <h1>FestivalJoy</h1>
 
         <p class="text-center">
-            <span class="date">April 2016</span>
+            <span class="date">May 2015 - Current</span>
         </p>
 
         <div class="panel-body">
 
             <div class="row">
                 <p>
-                    I was part of the team that developed the smarty city mobile app <a
-                            target="_blank" href="http://www.loqiva.com/">Loqiva</a>, which was used across the
-                    borough of Tower Hamlets. It updates citizens with the location of events and live news feeds. I
-                    focused on the web platform and using Zend PHP framework on the server and JScript extensively on
-                    the front end to reduce server load. Working
-                    closely with the designers and users, we took care to develop the most user friendly and efficient experience possible.
+                    After searching for the next music festivals coming up around europe I wasn't satisfied with the user
+                    experience offered by sites such as <a href="http://www.festivalsearcher.com" target="_blank">www.festivalsearcher.com</a>. So using AngularJS and the Google Maps
+                    extensions me and a friend built a responsive mapping tool which allows you to filter through marker
+                    objects on a map and get a better taste of where and when awesome things are happening
+                </p>
+                <p>
+                    The application is built using
+                    AngularJS v1.4.1, Grunt, Karma, Jasmin, Express, and Bower. The JavaScript isn't compressed so the
+                    source
+                    can be viewed. The data was entered manually and collected from mainly from wikipedia and with the
+                    soundcloud plugins, the images from google under suitable licenses.</p>
                 </p>
 
                 <div class="col-xs-12 col-md-12">

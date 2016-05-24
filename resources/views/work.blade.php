@@ -48,9 +48,9 @@
             <span class="date">2015 - current</span>
 
             <p>After searching for the next music festivals coming up around europe I wasn't satisfied with the user
-                experience offered by sites such as http://www.festivalsearcher.com/. So using AngularJS and the Google Maps
-                extensions me and my brother built a responsive mapping tool which allows you to filter through marker
-                objects on a map and get a better taste of where and when things are happening... <a href="work/festivaljoy">Read More</a>
+                experience offered by sites such as <a href="http://www.festivalsearcher.com" target="_blank">www.festivalsearcher.com</a>. So using AngularJS and the Google Maps
+                extensions me and a friend built a responsive mapping tool which allows you to filter through marker
+                objects on a map and get a better taste of where and when awesome things are happening... <a href="work/festivaljoy">Read More</a>
 
             <h2>Advent of code</h2>
             <span class="date">April 21, 2016</span>

@@ -40,7 +40,7 @@
             <p>Helped researchers at World Health Organisation with displaying malaria data visually so as to make
                 better
                 conclusions about the results and the resources needed to mitigate the spread of the tropical disease,
-                view <a href="https://github.com/CodeMuz/mapgen" target="_blank">demo</a> on GitHub.</p>
+                view <a href="https://github.com/CodeMuz/mapgen" target="_blank">source</a> on GitHub.</p>
 
             <h1>Projects</h1>
 
@@ -80,8 +80,7 @@
             <p>A final year project at Bristol University, I worked with other students to build a social network for
                 academics to be able to share and discuss their research. It was a CodeIgniter application and made of
                 of
-                Amazons web services (S3, Elastic Beanstalk, RDS). View my thesis and findings related to the area
-                here.</p>
+                Amazons web services (S3, Elastic Beanstalk, RDS). View my <a href="http://bit.ly/mw_asn2012" target="_blank">thesis and findings</a> related to the area.</p>
 
         </div>
     </div>

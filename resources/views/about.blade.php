@@ -9,120 +9,120 @@
         <!-- Header -->
 <header>
     <div class="profile-wrapper">
-
         <img class="img-responsive" style="visibility:hidden" src="img/profile.png" alt="">
     </div>
-    <div class="panel panel-default about-panel">
-        <div class="panel-body">
-            <section class="about-text-block">
+</header>
+<div class="panel panel-default about-panel">
+    <div class="panel-body">
+        <section class="about-text-block">
 
-                <h1>About me</h1>
+            <h1>About me</h1>
 
-                <p>Hi I'm Murray, a tech enthusiast, explorer and music lover. I've lived in
-                    London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
+            <p>Hi I'm Murray, a tech enthusiast, explorer and music lover. I've lived in
+                London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
 
-                <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
-                    Computing.</p>
+            <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
+                Computing.</p>
 
-                <p>I'm passionate about all things digital and how they can be used to benefit society.</p>
+            <p>I'm passionate about all things digital and how they can be used to benefit society.</p>
 
-                <p>When I'm not at the computer I love to explore the world and experience new cultures, see some of the
-                    places you might
-                    find me <a href="" onclick="return false;" data-toggle="modal" data-target="#myModal">here</a>.</p>
+            <p>When I'm not at the computer I love to explore the world and experience new cultures, see some of the
+                places you might
+                find me <a href="" onclick="return false;" data-toggle="modal" data-target="#myModal">here</a>.</p>
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                            aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Travel Map</h4>
-                            </div>
-                            <div class="modal-body">
-                                <iframe src="https://www.google.com/maps/d/embed?mid=1JugdoW0l7ttbn98psy-84lkhVuQ"
-                                        width="100%" height="480"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Travel Map</h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1JugdoW0l7ttbn98psy-84lkhVuQ"
+                                    width="100%" height="480"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <p>The last books I read were: the Foundation Trilogy, Darwin's Ghosts and the Jungle Book. Check out
-                    other the things I
-                    remember reading <a target="_blank"
-                                        href="https://www.goodreads.com/user/show/43312599-murray-wynnes">here</a>.</p>
+            <p>The last books I read were: the Foundation Trilogy, Darwin's Ghosts and the Jungle Book. Check out
+                other the things I
+                remember reading <a target="_blank"
+                                    href="https://www.goodreads.com/user/show/43312599-murray-wynnes">here</a>.</p>
 
-                <p><a target="_blank" href="resume.pdf" class="btn btn-success" id="resume-dwnld"
-                      role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
+            <p><a target="_blank" href="http://bit.ly/mwynnescv" class="btn btn-success" id="resume-dwnld"
+                  role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
 
 
-                <h1>Technical Skills</h1>
+            <h1>Technical Skills</h1>
 
-                <div class="skill-bars">
+            <div class="skill-bars">
 
-                    @foreach ($skills as $skill)
-                        <span>{{ $skill->name }}</span>
+                @foreach ($skills as $skill)
+                    <span>{{ $skill->name }}</span>
 
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar"
-                                 aria-valuenow="{{ $skill->value }}"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100" style="width:{{ $skill->value }}%">
-                                <span class="sr-only">{{ $skill->value }}% Complete</span>
-                            </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar"
+                             aria-valuenow="{{ $skill->value }}"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width:{{ $skill->value }}%">
+                            <span class="sr-only">{{ $skill->value }}% Complete</span>
                         </div>
-                    @endforeach
+                    </div>
+                @endforeach
 
-                </div>
+            </div>
 
-                <h1>Competences</h1>
+            <h1>Competences</h1>
 
-                <div class="skill-bars">
+            <div class="skill-bars">
 
-                    @foreach ($compentency as $skill)
-                        <span>{{ $skill->name }}</span>
+                @foreach ($compentency as $skill)
+                    <span>{{ $skill->name }}</span>
 
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar"
-                                 aria-valuenow="{{ $skill->value }}"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100" style="width:{{ $skill->value }}%">
-                                <span class="sr-only">{{ $skill->value }}% Complete</span>
-                            </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar"
+                             aria-valuenow="{{ $skill->value }}"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width:{{ $skill->value }}%">
+                            <span class="sr-only">{{ $skill->value }}% Complete</span>
                         </div>
-                    @endforeach
+                    </div>
+                @endforeach
 
-                </div>
+            </div>
 
-            </section>
+        </section>
 
 
-            <section class="about-text-block">
+        <section class="about-text-block">
 
-                <h1>This website</h1>
+            <h1>This website</h1>
 
-                <p>This website was built using PHP, HTML5, SCSS and JQuery. For the framework I'm using <a
-                            target="_blank" href="https://laravel.com/">Laravel</a> and for a responsive layout
-                    I'm using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The site is
-                    built and packaged with <a
-                            target="_blank"
-                            href="http://gulpjs.com/">Gulp</a> using <a href="https://laravel.com/docs/5.0/elixir"
-                                                                      target="_blank">Elixer</a>.
-                </p>
+            <p>This website was built using PHP, HTML5, SCSS and JQuery. For the framework I'm using <a
+                        target="_blank" href="https://laravel.com/">Laravel</a> and for a responsive layout
+                I'm using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The site is
+                built and packaged with <a
+                        target="_blank"
+                        href="http://gulpjs.com/">Gulp</a> using <a href="https://laravel.com/docs/5.0/elixir"
+                                                                    target="_blank">Elixer</a>.
+            </p>
 
-                <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
-                    and is open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
-                </p>
+            <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
+                and is open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+            </p>
 
-                <a target="_blank" id="github-btn" href="https://github.com/CodeMuz/laravel-profile-page" class="btn btn-primary"
-                   role="button"><i class="fa fa-github" aria-hidden="true"></i> View
-                    source on Github</a>
-            </section>
-        </div>
+            <a target="_blank" id="github-btn" href="https://github.com/CodeMuz/laravel-profile-page"
+               class="btn btn-primary"
+               role="button"><i class="fa fa-github" aria-hidden="true"></i> View
+                source on Github</a>
+        </section>
     </div>
-</header>
+</div>
 
 @endsection

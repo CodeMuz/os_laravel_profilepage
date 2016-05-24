@@ -1,0 +1,38 @@
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  margin: 10vh 0;
+}
+
+div.contact-panel {
+  text-align: left;
+  margin: 0;
+  border-radius: 0;
+  padding-top: 0;
+  border:none;
+}
+
+.contact-form{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  input{
+    height: 50px;
+  }
+}
+
+div.contact-wrapper {
+  padding: 70px 20px;
+  background-image: url("../../img/cubes.png");
+  font-size: 1.4em;
+  color: grey;
+}
+
+@media all and (max-width:500px) {
+  div.contact-wrapper {
+    font-size: 1.2em;
+  }
+}

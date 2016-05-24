@@ -18,16 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('work', function () {
+Route::get('/work', function () {
     return view('work');
 });
 
-Route::get('work/{page}', function ($page) {
+Route::get('/work/{page}', function ($page) {
     return view('work/'.$page, [
     ]);
 });
 
-Route::get('about', function () {
+Route::get('/about', function () {
 
     $skills = Skill::orderBy('created_at', 'asc')->get();
     $competency = Competency::orderBy('created_at', 'asc')->get();
@@ -39,6 +39,23 @@ Route::get('about', function () {
 
 });
 
-Route::get('contact', function () {
+Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::post('/contact', function (Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'subject' => 'required|max:255',
+            'message' => 'required|max:255'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('/contact')
+                ->withInput()
+                ->withErrors($validator);
+        }
+
+        // Create The Task...
 });

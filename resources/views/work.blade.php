@@ -53,7 +53,7 @@
                 objects on a map and get a better taste of where and when awesome things are happening... <a href="work/festivaljoy">Read More</a>
 
             <h2>Advent of code</h2>
-            <span class="date">April 21, 2016</span>
+            <span class="date">December 2015</span>
 
             <p>Over christmas I decided to get invovled with Eric Wastl's Advent of Code game as an excuse to learn some
                 new
@@ -65,7 +65,7 @@
                         target="_blank">repository</a>.</p>
 
             <h2>Twitter Fever</h2>
-            <span class="date">April 21, 2016</span>
+            <span class="date">September 2015</span>
 
             <p>A Ruby on Rails app which allows you to search for tweets on a users twitter account and displays the
                 most
@@ -75,7 +75,7 @@
                         href="https://github.com/CodeMuz/twitter-api-beiber" arget="_blank">here</a>.</p>
 
             <h2>Studyswap</h2>
-            <span class="date">April 21, 2016</span>
+            <span class="date">November 2012 - April 2013</span>
 
             <p>A final year project at Bristol University, I worked with other students to build a social network for
                 academics to be able to share and discuss their research. It was a CodeIgniter application and made of

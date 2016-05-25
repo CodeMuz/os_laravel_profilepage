@@ -34,25 +34,40 @@ class UserController extends Controller
         }
 
 
+  $privatekey = env('NOCAPTCHA_SECRET');
+  $resp = recaptcha_check_answer ($privatekey,
+      $_SERVER["REMOTE_ADDR"],
+      $_POST["recaptcha_challenge_field"],
+      $_POST["recaptcha_response_field"]);
 
-//        $email = new \stdClass();
-//        $email->name = $request->name;
-//        $email->from = $request->email;
-//        $email->subject = $request->subject;
-//        $email->message = $request->message;
-//
-//        Mail::send('emails.contact_email', ['body' => $email->message], function ($m) use ($email) {
-//
-//            $m->from($email->from, $email->name);
-//
-//            //Not needed. All email is routing to app owner via config/mail.php
-//            //$m->to('mrwynnes@gmail.com', $email->name);
-//
-//            $m->subject($email->subject);
-//        });
+  if (!$resp->is_valid) {
+      // What happens when the CAPTCHA was entered incorrectly
+      $request->session()->flash('alert-danger', 'CAPTCHA was entered incorrectly');
 
-        $request->session()->flash('alert-success', 'Your message has been sent successfully!');
+  } else {
+      $email = new \stdClass();
+      $email->name = $request->name;
+      $email->from = $request->email;
+      $email->subject = $request->subject;
+      $email->message = $request->message;
+
+      Mail::send('emails.contact_email', ['body' => $email->message], function ($m) use ($email) {
+
+          $m->from($email->from, $email->name);
+
+          //Not needed. All email is routing to app owner via config/mail.php
+          //$m->to('mrwynnes@gmail.com', $email->name);
+
+          $m->subject($email->subject);
+      });
+
+      $request->session()->flash('alert-success', 'Your message has been sent successfully!');
+
+
+  }
 
         return redirect('/contact');
+
+
     }
 }

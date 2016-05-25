@@ -32,7 +32,6 @@
  * THE SOFTWARE.
  */
 
-namespace App\Libraries;
 
 /**
  * The reCAPTCHA server URL's

@@ -18,11 +18,11 @@
             <div class="row">
                 <p>
                     I was part of the team that developed the smarty city mobile app <a
-                            target="_blank" href="http://www.loqiva.com/">Loqiva</a>, which was used across the
-                    borough of Tower Hamlets. It updates citizens with the location of events and live news feeds. I
+                            target="_blank" href="http://www.loqiva.com/">Loqiva</a>, which used components from apps that were used across the
+                    borough of Tower Hamlets with survey APIs. It updates citizens with the location of events and live news feeds. I
                     focused on the web platform and using Zend PHP framework on the server and JScript extensively on
                     the front end to reduce server load. Working
-                    closely with the designers and users, we took care to develop the most user friendly and efficient experience possible.
+                    closely with designers and potential users, we took care to develop the most user friendly experience possible.
                 </p>
 
                 <div class="col-xs-12 col-md-12">
@@ -31,9 +31,9 @@
 
                 <p>
                     While working on this project I learnt how to follow single page application principles, without
-                    using SPA frameworks such as Angular or React, so that we could
+                    needing feature rich SPA frameworks, so that we could
                     degrade gracefully for older devices and browsers. For example a technique we employed was to
-                    maintain key components in the browser and update the page model through Ajax only when necessary.
+                    maintain data models in the javascript and update the DOM with changes returned from REST calls.
                 </p>
 
                 <p>Another requirement was to scale authentication through the API over SSL: we used OAuth 2.0 plugins
@@ -43,12 +43,12 @@
 
 
                 <p>
-                    Further, on the web platform we developed several
+                    On the web platform we developed several
                     JQuery plugins which extend the
                     basic functionality of forms and Google maps so that when a user clicks on the map then forms are
                     added
                     and submitted dynamically, thus enabling the map as an interactive tool for updating the mobile
-                    content.
+                    content. The application populates it's content dynamically using the following APIs: Google places, YouTube subscribe services, Twitter API and the Eventful API.
                 </p>
 
                 <div class="col-xs-12 col-md-12">

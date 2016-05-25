@@ -15,17 +15,16 @@
             <span class="date">2013 - 2016</span>
 
             <p>
-                Since 2013 I've helped to build and maintain applications for Captive Health which are used withing the
-                NHS and around the world. Some of the features we developed were responsive surveys, automatic reports
-                and dynamic mapping tools. The platform is being used in over
-                10 hospitals and consists of a web app
+                Since 2013 I've helped to build and maintain applications for Captive Health which are used within the
+                NHS around the UK. Some of the features we developed were responsive surveys, automatic reports
+                and dynamic mapping tools. The platform is being used effectively in many hospitals and consists of a web app
                 alongside a mobile platform.
             </p>
 
             <h2>Loqiva</h2>
             <span class="date">January 2016 - April 2016</span>
 
-            <p>Developed a content management system used by Tower Hamlets council and for future smart cities called
+            <p>Developed a content management system for future smart cities called
                 <i>Loqiva</i>.
                 The features of the mobile app include surveys, payment channels, rewards, notifications and maps. All
                 content is served

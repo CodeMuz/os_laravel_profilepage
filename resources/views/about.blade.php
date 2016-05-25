@@ -18,10 +18,11 @@
 
             <h1>About me</h1>
 
-            <p>Hi I'm Murray, a tech enthusiast, explorer and music lover. I've lived in
-                London for over a year now and work at the digital agency <b>Captive Minds.</b></p>
+            <p>Hi I'm Murray, a tech enthusiast, explorer and music lover. I've lived and worked in London for several
+                years and enjoy getting out in the vibrant city, wandering around the parks, museums and restaurants.
+            </p>
 
-            <p>I studied Computer Science and Mathmatics at Bristol University and received an MSc in Advanced
+            <p>I studied Computer Science and Mathematics at Bristol University and was awarded an MSc in Advanced
                 Computing.</p>
 
             <p>I'm passionate about all things digital and how they can be used to benefit society.</p>
@@ -59,15 +60,15 @@
                   role="button"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Download my resume</a></p>
 
 
-            <h1>Technical Skills</h1>
+            <h1>Competences</h1>
 
             <div class="skill-bars">
 
-                @foreach ($skills as $skill)
+                @foreach ($compentency as $skill)
                     <span>{{ $skill->name }}</span>
 
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar"
+                        <div class="progress-bar progress-bar-info" role="progressbar"
                              aria-valuenow="{{ $skill->value }}"
                              aria-valuemin="0"
                              aria-valuemax="100" style="width:{{ $skill->value }}%">
@@ -78,15 +79,15 @@
 
             </div>
 
-            <h1>Competences</h1>
+            <h1>Technical Skills</h1>
 
             <div class="skill-bars">
 
-                @foreach ($compentency as $skill)
+                @foreach ($skills as $skill)
                     <span>{{ $skill->name }}</span>
 
                     <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar"
+                        <div class="progress-bar progress-bar-success" role="progressbar"
                              aria-valuenow="{{ $skill->value }}"
                              aria-valuemin="0"
                              aria-valuemax="100" style="width:{{ $skill->value }}%">

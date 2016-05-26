@@ -28,7 +28,7 @@ Next clone or fork repository to local:
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
  
-Create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
+Then create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
 
  
 Install the requirements in composer.json
@@ -73,7 +73,7 @@ $ vendor/bin/phpunit
 ###  Deploy instructions (example using [Heroku](https://dashboard.heroku.com/))
 
 
-Next clone or fork repository to local:
+First clone or fork repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```

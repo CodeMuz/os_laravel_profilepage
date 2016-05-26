@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" data-toggle="tooltip" title="Résumé" href="resume.pdf"
+                        <a target="_blank" data-toggle="tooltip" title="Résumé" href="http://bit.ly/mwynnescv"
                            class="btn-social btn-outline"><i class="fa fa-fw fa-file"></i></a>
                     </li>
                     <li>

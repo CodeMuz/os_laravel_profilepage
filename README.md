@@ -7,18 +7,21 @@ To setup the app locally for development I first recommend choosing one of the f
 
 Option 1 (with virtual machine and great for sharing) :+1:
 
- * i) Use vagrant without homestead and you will need to provision apache, mysql, php and laravel in the bootstrap.
- * ii) Use homesetad laravel (see https://laravel.com/docs/5.2/homestead)
+Install [Vagrant](https://www.vagrantup.com) without homestead and you will need to provision apache, mysql, php and laravel in the bootstrap.
 
 Option 2
 
- * i) Install Valet for local Lamp stack (light weight but Mac only)
+Use [Homestead](https://laravel.com/docs/5.2/homestead) with Laravel
+
+Option 3
+
+Install Valet for local Lamp stack (light weight but Mac only)
 
 
 ### For local development:
 
 
-First choose option 1 or 2 , or any alternative that suits you.
+First choose option 1, 2, 3 or any alternative that suits you.
 
  ----------
 First Install dependencies:

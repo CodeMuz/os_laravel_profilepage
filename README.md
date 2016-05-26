@@ -3,19 +3,13 @@
 
 [![Build Status](https://travis-ci.org/CodeMuz/laravel-profile-page.svg?branch=master)](https://travis-ci.org/CodeMuz/laravel-profile-page)
 
-To setup the app locally for development I first recommend choosing one of the following environments:
+To setup the app locally for development I first recommend choosing only one of the following environments:
 
-Option 1 (with virtual machine and great for sharing) :+1:
+ 1. Install Valet for local Lamp stack (light weight but Mac only)
 
-Install [Vagrant](https://www.vagrantup.com) without homestead and you will need to provision apache, mysql, php and laravel in the bootstrap.
+ 2. Install [Vagrant](https://www.vagrantup.com) with [Homestead](https://laravel.com/docs/5.2/homestead) for Laravel
 
-Option 2
-
-Use [Homestead](https://laravel.com/docs/5.2/homestead) with Laravel
-
-Option 3
-
-Install Valet for local Lamp stack (light weight but Mac only)
+ 3. Use [Vagrant](https://www.vagrantup.com) without homestead and you will need to provision apache, mysql, php and laravel in the bootstrap.sh 
 
 
 ### For local development:

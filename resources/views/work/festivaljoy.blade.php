@@ -4,10 +4,8 @@
 
 @section('content')
 
-
-
     <div class="panel panel-default project-panel">
-        <h1><a target="_blank" href="http://festivaljoy.com/">FestivalJoy</a></h1>
+        <h1>FestivalJoy</h1>
 
         <p class="text-center">
             <span class="date">May 2015 - Current</span>
@@ -19,11 +17,9 @@
                 <p>
                     After searching for the next music festivals coming up around europe I wasn't satisfied with the
                     user
-                    experience offered by sites such as <a href="http://www.festivalsearcher.com" target="_blank">www.festivalsearcher.com</a>.
-                    So using AngularJS and the Google Maps
-                    extensions me and a friend built a responsive mapping tool which allows you to filter through marker
+                    experience offered by other websites, so using AngularJS and Google Maps my brother and I built <a target="_blank" href="http://festivaljoy.com/">FestivalJoy</a>. In summary it's a responsive mapping tool which allows you to filter through marker
                     objects on a map and get a better taste of where and when awesome things are happening. There is
-                    also integration with the soundcloud API which pulls the latest festival playlists when the
+                    also integration with the <a href="https://developers.soundcloud.com/docs/api/guide" target="_blank">SoundCloud API</a> which pulls the latest festival playlists when the
                     festival is selected.
                 </p>
 

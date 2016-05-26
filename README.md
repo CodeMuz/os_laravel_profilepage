@@ -15,7 +15,7 @@ To setup the app locally for development I first recommend choosing only one of 
 ### For local development:
 
 
-First choose option 1, 2, 3 or any alternative that suits you.
+1. First choose option 1, 2, 3 or any alternative that suits you.
 
  
 Then install dependencies:
@@ -23,95 +23,92 @@ Then install dependencies:
 ![composer](https://img.shields.io/badge/Composer-1.1.0-blue.svg)
 
  
-Next clone repository to local:
+2. Next clone repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
  
-Create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
+3. Create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
 
  
-Install the requirements in composer.json
+4. Install the requirements in composer.json
 ```
 $ composer install
 ```
 
  
-Install node modules
+5. Install node modules
 ```
 $ npm install
 ```
 
  
-Initialize mysql (for Mac if chosen mysql)
+6. Initialize mysql (for Mac if chosen mysql)
 ```
 $ mysql.server start
 ```
 
  
-Migrate and seed database
+7. Migrate and seed database
 ```
 $ php artisan migrate:refresh --seed
 ```
 
  
-Build application front end
+8. Build application front end
 ```
 $ gulp --production
 ```
 
  
-Run Unit tests
+9. Run Unit tests
 ```
 $ vendor/bin/phpunit
 ```
 
 
-
-
-
 ###  Deploy instructions (example using [Heroku](https://dashboard.heroku.com/))
 
 
-First clone repository to local
+1. First clone repository to local
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
 
  
-Next create a new heroku application in project folder
+2. Next create a new heroku application in project folder
 ```
 $ heroku create
 ```
 
  
-Add heroku buildpacks:
+3. Add heroku buildpacks:
 ```
 $ heroku buildpacks:set heroku/php
 $ heroku buildpacks:add --index 2 heroku/nodejs
 ```
 
  
-Generate Laravel key and set heroku config var
+4. Generate Laravel key and set heroku config var
 ```
 $ php artisan key:generate --show
 $ heroku config:set APP_KEY={KEY}
 ```
 
  
-Add ClearDB addon to heroku
+5. Add ClearDB addon to heroku
 ```
 $ heroku addons:create cleardb
 ```
 
  
-Migrate and seed database
+6. Migrate and seed database
 ```
 heroku run php /app/artisan migrate:refresh --seed
 ```
 
  
-Build and run application:
+7. Build and run application:
 ```
 $ git push heroku master
 ```

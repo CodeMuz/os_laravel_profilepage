@@ -1,8 +1,9 @@
-# A Profile page created with love using Laravel. With pages for work, contact and about.
+### A profile website created with love using Laravel. 
+####With pages for work, contact and about.
 
 [![Build Status](https://travis-ci.org/CodeMuz/laravel-profile-page.svg?branch=master)](https://travis-ci.org/CodeMuz/laravel-profile-page)
 
-To setup the app locally for development I recommend choosing one of the following environments:
+To setup the app locally for development I first recommend choosing one of the following environments:
 
 Option 1 (with virtual machine and great for sharing) :+1:
 
@@ -14,102 +15,123 @@ Option 2
  * i) Install Valet for local Lamp stack (light weight but Mac only)
 
 
-#### For local development:
-
-Dependencies:
-[![npm](https://img.shields.io/badge/npm-2.11.3-green.svg)
-
-homebrew, [valet](https://laravel.com/docs/5.2/valet), composer, node, git
-
-1. Install: (Option 1 or 2) with node, git, composer, homebrew and [valet](https://laravel.com/docs/5.2/valet)
+### For local development:
 
 
-2. Clone repository to local
+First choose option 1 or 2 , or any alternative that suits you.
+
+ ----------
+First Install dependencies:
+ ![npm](https://img.shields.io/badge/npm-2.11.3-blue.svg) ![homebrew](https://img.shields.io/badge/Homebrew-0.9.9-blue.svg) ![valet](https://img.shields.io/badge/Valet-1.1.12-blue.svg)
+![composer](https://img.shields.io/badge/Composer-1.1.0-blue.svg)
+
+ ----------
+Then clone repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
-3. Create .env file in the project root
-see https://github.com/laravel/laravel/blob/master/.env.example
+ ----------
+Create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
 
-
-4. Install Composer
+ ----------
+Install the requirements in composer.json
 ```
 $ composer install
 ```
 
-5. Install node modules
+ ----------
+Install node modules
 ```
 $ npm install
 ```
 
-7. Initialize database
+ ----------
+Initialize mysql (for Mac if chosen mysql)
 ```
 $ mysql.server start
 ```
 
-8. Migrate and seed database
+ ----------
+Migrate and seed database
 ```
 $ php artisan migrate:refresh --seed
 ```
 
-9. Build application
+ ----------
+Build application front end
 ```
 $ gulp --production
 ```
 
-10. Run Unit tests
+ ----------
+Run Unit tests
 ```
 $ vendor/bin/phpunit
 ```
 
-####  Deploy instructions (example using Heroku)
 
-1. Clone repository to local
+----------
+
+
+###  Deploy instructions (example using [Heroku](https://dashboard.heroku.com/))
+
+
+First clone repository to local
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
 
-2. Create heroku application
+ ----------
+Next create a new heroku application in project folder
 ```
 $ heroku create
 ```
 
-4. Add heroku buildpacks:
+ ----------
+Add heroku buildpacks:
 ```
 $ heroku buildpacks:set heroku/php
 $ heroku buildpacks:add --index 2 heroku/nodejs
 ```
 
-5. Generate Laravel key and set heroku config var
+ ----------
+Generate Laravel key and set heroku config var
 ```
 $ php artisan key:generate --show
 $ heroku config:set APP_KEY={KEY}
 ```
 
-6. Add ClearDB addon to heroku
+ ----------
+Add ClearDB addon to heroku
 ```
 $ heroku addons:create cleardb
 ```
 
-7. Migrate and seed database
+ ----------
+Migrate and seed database
 ```
 heroku run php /app/artisan migrate:refresh --seed
 ```
 
-8. Build and run application:
+ ----------
+Build and run application:
 ```
 $ git push heroku master
 ```
 
+----------
 
 ##License
 
-[CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/) Attribution-NonCommercial-NoDerivatives 4.0 International
+Attribution-NonCommercial-NoDerivatives 4.0 International
+[CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/) 
 
 [![License](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ###Authors
+
 * Murray Wynnes
+    * Website: [http://www.murraywynnes.com](http://www.murraywynnes.com)
 
 ###Attribution
 

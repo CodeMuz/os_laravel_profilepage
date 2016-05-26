@@ -17,8 +17,8 @@
             <p>
                 Since 2013 I've helped to build and maintain applications for Captive Health which are used within the
                 NHS around the UK. Some of the features we developed were responsive surveys, automatic reports
-                and dynamic mapping tools. The platform is being used effectively in many hospitals and consists of a web app
-                alongside a mobile platform.
+                and dynamic mapping tools. The platform is being used effectively in many hospitals and includes many web applications
+                connecting to respective native mobile apps.
             </p>
 
             <h2>Loqiva</h2>

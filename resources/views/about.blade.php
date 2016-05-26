@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <p>The last books I read were: the Foundation Trilogy, Darwin's Ghosts and the Jungle Book. Check out
+            <p>The last books I read were: the Darwin's Ghosts, Foundation Trilogy and the Jungle Book. Check out
                 other the things I
                 remember reading <a target="_blank"
                                     href="https://www.goodreads.com/user/show/43312599-murray-wynnes">here</a>.</p>

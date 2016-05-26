@@ -107,7 +107,7 @@ $ heroku addons:create cleardb
  
 Migrate and seed database
 ```
-heroku run php /app/artisan migrate:refresh --seed
+$ heroku run php /app/artisan migrate:refresh --seed
 ```
 
  

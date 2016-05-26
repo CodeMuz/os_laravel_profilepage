@@ -115,7 +115,7 @@
             </p>
 
             <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
-                and is open-sourced software under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+                and is under the Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
             </p>
 
             <a target="_blank" id="github-btn" href="https://github.com/CodeMuz/laravel-profile-page"

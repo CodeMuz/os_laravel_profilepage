@@ -105,18 +105,16 @@ $ heroku addons:create cleardb
 ```
 
  
-Migrate and seed database
-```
-$ heroku run php /app/artisan migrate:refresh --seed
-```
-
- 
 Build and run application:
 ```
 $ git push heroku master
 ```
 
 
+Migrate and seed database
+```
+$ heroku run php /app/artisan migrate:refresh --seed
+```
 
 ##License
 

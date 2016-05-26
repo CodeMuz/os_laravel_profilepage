@@ -17,57 +17,57 @@ To setup the app locally for development I first recommend choosing only one of 
 
 First choose option 1, 2, 3 or any alternative that suits you.
 
- ----------
-First Install dependencies:
+ 
+Then install dependencies:
  ![npm](https://img.shields.io/badge/npm-2.11.3-blue.svg) ![homebrew](https://img.shields.io/badge/Homebrew-0.9.9-blue.svg) ![valet](https://img.shields.io/badge/Valet-1.1.12-blue.svg)
 ![composer](https://img.shields.io/badge/Composer-1.1.0-blue.svg)
 
- ----------
-Then clone repository to local:
+ 
+Next clone repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
- ----------
+ 
 Create [.env](https://github.com/laravel/laravel/blob/master/.env.example) file in the project root
 
- ----------
+ 
 Install the requirements in composer.json
 ```
 $ composer install
 ```
 
- ----------
+ 
 Install node modules
 ```
 $ npm install
 ```
 
- ----------
+ 
 Initialize mysql (for Mac if chosen mysql)
 ```
 $ mysql.server start
 ```
 
- ----------
+ 
 Migrate and seed database
 ```
 $ php artisan migrate:refresh --seed
 ```
 
- ----------
+ 
 Build application front end
 ```
 $ gulp --production
 ```
 
- ----------
+ 
 Run Unit tests
 ```
 $ vendor/bin/phpunit
 ```
 
 
-----------
+
 
 
 ###  Deploy instructions (example using [Heroku](https://dashboard.heroku.com/))
@@ -78,45 +78,45 @@ First clone repository to local
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
 
- ----------
+ 
 Next create a new heroku application in project folder
 ```
 $ heroku create
 ```
 
- ----------
+ 
 Add heroku buildpacks:
 ```
 $ heroku buildpacks:set heroku/php
 $ heroku buildpacks:add --index 2 heroku/nodejs
 ```
 
- ----------
+ 
 Generate Laravel key and set heroku config var
 ```
 $ php artisan key:generate --show
 $ heroku config:set APP_KEY={KEY}
 ```
 
- ----------
+ 
 Add ClearDB addon to heroku
 ```
 $ heroku addons:create cleardb
 ```
 
- ----------
+ 
 Migrate and seed database
 ```
 heroku run php /app/artisan migrate:refresh --seed
 ```
 
- ----------
+ 
 Build and run application:
 ```
 $ git push heroku master
 ```
 
-----------
+
 
 ##License
 

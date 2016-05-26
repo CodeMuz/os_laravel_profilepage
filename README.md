@@ -5,7 +5,7 @@
 
 To setup the app locally for development I first recommend choosing only one of the following environments:
 
- 1. Install Valet for local Lamp stack (light weight but Mac only)
+ 1. Install [Valet](https://laravel.com/docs/5.2/valet) for local Lamp stack (light weight but Mac only)
 
  2. Install [Vagrant](https://www.vagrantup.com) with [Homestead](https://laravel.com/docs/5.2/homestead) for Laravel
 

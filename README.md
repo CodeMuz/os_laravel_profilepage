@@ -23,7 +23,7 @@ Then install dependencies:
 ![composer](https://img.shields.io/badge/Composer-1.1.0-blue.svg)
 
  
-Next clone repository to local:
+Next clone or fork repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
@@ -73,7 +73,7 @@ $ vendor/bin/phpunit
 ###  Deploy instructions (example using [Heroku](https://dashboard.heroku.com/))
 
 
-First clone repository to local
+Next clone or fork repository to local:
 ```
 $ git clone git@github.com:CodeMuz/laravel-profile-page.git
 ```
@@ -121,9 +121,9 @@ $ git push heroku master
 ##License
 
 Attribution-NonCommercial-NoDerivatives 4.0 International
-[CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/) 
+[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![License](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![License](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ###Authors
 

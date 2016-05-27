@@ -1,5 +1,3 @@
-<!-- Stored in resources/views/welcome.blade.php -->
-
 @extends('layouts.master')
 
 @section('title', 'Home')
@@ -41,8 +39,8 @@
                             <h4 class="modal-title" id="myModalLabel">Travel Map</h4>
                         </div>
                         <div class="modal-body">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1JugdoW0l7ttbn98psy-84lkhVuQ"
-                                    width="100%" height="480"></iframe>
+                            <iframe id="travel-map-iframe"
+                                    src="https://www.google.com/maps/d/embed?mid=1JugdoW0l7ttbn98psy-84lkhVuQ"></iframe>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -115,7 +113,8 @@
             </p>
 
             <p>This app is hosted on <a target="_blank" href="https://www.heroku.com/">Heroku</a>
-                and is under the Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+                and is under the Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC
+                    BY-NC-SA 4.0</a>.
             </p>
 
             <a target="_blank" id="github-btn" href="https://github.com/CodeMuz/laravel-profile-page"

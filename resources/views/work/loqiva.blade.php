@@ -4,8 +4,6 @@
 
 @section('content')
 
-
-
     <div class="panel panel-default project-panel">
         <h1>Loqiva</h1>
 
@@ -18,11 +16,14 @@
             <div class="row">
                 <p>
                     I was part of the team that developed the smarty city mobile app <a
-                            target="_blank" href="http://www.loqiva.com/">Loqiva</a>, which used components from apps that were used across the
-                    borough of Tower Hamlets with survey APIs. It updates citizens with the location of events and live news feeds. I
+                            target="_blank" href="http://www.loqiva.com/">Loqiva</a>, which used components from apps
+                    that were used across the
+                    borough of Tower Hamlets with survey APIs. It updates citizens with the location of events and live
+                    news feeds. I
                     focused on the web platform and using Zend PHP framework on the server and JScript extensively on
                     the front end to reduce server load. Working
-                    closely with designers and potential users, we took care to develop the most user friendly experience possible.
+                    closely with designers and potential users, we took care to develop the most user friendly
+                    experience possible.
                 </p>
 
                 <div class="col-xs-12 col-md-12">
@@ -48,7 +49,8 @@
                     basic functionality of forms and Google maps so that when a user clicks on the map then forms are
                     added
                     and submitted dynamically, thus enabling the map as an interactive tool for updating the mobile
-                    content. The application populates it's content dynamically using the following APIs: Google places, YouTube subscribe services, Twitter API and the Eventful API.
+                    content. The application populates it's content dynamically using the following APIs: Google places,
+                    YouTube subscribe services, Twitter API and the Eventful API.
                 </p>
 
                 <div class="col-xs-12 col-md-12">

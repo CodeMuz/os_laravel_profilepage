@@ -1,5 +1,3 @@
-<!-- Stored in resources/views/welcome.blade.php -->
-
 @extends('layouts.master')
 
 @section('title', 'Home')
@@ -15,7 +13,6 @@
     <div class="panel panel-default contact-panel">
         <div class="panel-body">
 
-
             <div id="form-main">
                 <form class="form contact-form" action="{{ url('contact') }}" method="POST">
 
@@ -27,9 +24,9 @@
                             @if(Session::has('alert-' . $msg))
 
                                 <div class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#"
-                                                                                                         class="close"
-                                                                                                         data-dismiss="alert"
-                                                                                                         aria-label="close">&times;</a>
+                                                                                                           class="close"
+                                                                                                           data-dismiss="alert"
+                                                                                                           aria-label="close">&times;</a>
                                 </div>
                             @endif
                         @endforeach
@@ -64,4 +61,5 @@
                 </form>
             </div>
         </div>
+    </div>
 @endsection

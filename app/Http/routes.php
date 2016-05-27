@@ -43,4 +43,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::post('/contact', 'UserController@sendEmailReminder');
+Route::post('/contact', 'UserController@sendContactEmail');

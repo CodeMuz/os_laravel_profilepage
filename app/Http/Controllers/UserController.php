@@ -12,15 +12,14 @@ use GuzzleHttp\Client;
 class UserController extends Controller
 {
     /**
-     * Send an e-mail reminder to the user.
+     * Send an e-mail contact to the host.
      *
      * @param  Request $request
-     * @param  int $id
-     * @return Response
+     * @return null
      */
-    public function sendEmailReminder(Request $request)
+    public function sendContactEmail(Request $request)
     {
-        
+
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'email' => 'required|max:255',
@@ -42,12 +41,12 @@ class UserController extends Controller
             ]
         ]);
 
-        if($res->getStatusCode() == 200){
+        if ($res->getStatusCode() == 200) {
 
             $result = json_decode($res->getBody());
 
-            //Send Email every check is ok
-            if($result->success == true){
+            //Send Email if check is ok
+            if ($result->success == true) {
 
                 $email = new \stdClass();
                 $email->name = $request->name;
@@ -72,9 +71,7 @@ class UserController extends Controller
             }
         }
 
-
         return redirect('/contact');
-
 
     }
 }

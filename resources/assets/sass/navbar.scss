@@ -12,7 +12,7 @@
   li a:focus {
     outline: none;
   }
-  a:hover{
+  a:hover {
     color: black;
   }
 
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: 768px) {
-  .navbar{
+  .navbar {
     height: 8%;
   }
   .navbar-fixed-top {
@@ -48,17 +48,22 @@
   }
 }
 
-.navbar-default .navbar-nav li.page-scroll a {
-  text-shadow: none;
-  font-size: 1.3em;
-  padding-left: 30px;
-  color: #B4B4B4;
-  &:hover {
+.navbar-default .navbar-nav li.page-scroll {
+  &.active a {
     color: dimgrey;
-    transition: .4s;
+    background: none;
+    box-shadow: none;
   }
-  .active {
-    color: dimgrey;
+  a {
+    text-shadow: none;
+    font-size: 1.3em;
+    padding-left: 30px;
+    color: #B4B4B4;
+    &:hover {
+      transform: skewY(-2deg);
+      color: dimgrey;
+      transition: .4s;
+    }
   }
 }
 
@@ -66,15 +71,14 @@
   .navbar-brand {
     font-size: 1.4em;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     border-bottom: 1px solid #BDBDBD;
     background-color: rgb(255, 255, 255);
   }
-  .navbar-nav li.page-scroll{
+  .navbar-nav li.page-scroll {
     border-top: 1px solid rgb(251, 251, 251);
   }
 }
-
 
 .navbar-brand {
   text-shadow: none;

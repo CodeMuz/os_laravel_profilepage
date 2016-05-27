@@ -6,7 +6,7 @@
 
     <header>
         <div class="contact-wrapper">
-            Hello, I'd love to hear from you.<br/> Leave your details and I'll get back to you as soon as I can.
+            Hello, I'd love to hear from you.<br/> Please leave a message and I'll get back to you as soon as I can.
         </div>
     </header>
 

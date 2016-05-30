@@ -1,5 +1,10 @@
 <?php
 
+
+$key = getenv('APP_KEY');
+
+var_dump($key);
+die;
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
